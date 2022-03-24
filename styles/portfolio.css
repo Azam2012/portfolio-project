@@ -1,6 +1,7 @@
 :root {
   --branding-color: #3d087b;
   --secondary-color: #d3e4cd;
+  --neutral-light: #9254c8;
   --heading-font-family: "miso-bold";
   --default-font-family: "poppins";
 }
@@ -17,6 +18,10 @@ h1 {
 
 h2 {
   font-size: 40px;
+}
+
+h4 {
+  font-size: 44px;
 }
 
 p {
@@ -96,7 +101,7 @@ nav {
 }
 
 .nav-title {
-  color: #712b75;
+  color: var(--branding-color);
 }
 
 nav ul {
@@ -118,7 +123,47 @@ nav a {
 
 nav a:hover,
 nav li.active a {
-  color: #9254c8;
+  color: var(--neutral-light);
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  font-size: 24px;
+  color: var(--branding-color);
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
+
+footer .email-link:hover {
+  color: var(--neutral-light);
+}
+
+footer .social-links a {
+  margin: 20px 20px;
+  padding: 10px;
+  color: var(--branding-color);
+  background: var (--secondary-color);
+  font-size: 10px 14px;
+  border-radius: 50px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background: var(--branding-color);
 }
 
 @media (max-width: 900px) {
@@ -129,6 +174,10 @@ nav li.active a {
 
   h2 {
     font-size: 20px;
+  }
+
+  h4 {
+    font-size: 26px;
   }
 
   .hero {
